@@ -1,8 +1,8 @@
 {
-  "name": "php-bicycle/php-bicycle-<NULL>"
+  "name": "php-bicycle/php-bicycle-dispatcher"
   , "type": "library"
-  , "description": "<NULL> is ..."
-  , "keywords": [ "alternative", "bicycle", "<NULL>"]
+  , "description": "Dispatcher is common method to dispatch context by key."
+  , "keywords": [ "alternative", "bicycle", "dispatcher"]
   , "homepage": "https://github.com/pqbd/php-bicycle-<NULL>"
   , "license": "BSD-3-Clause"
   , "authors": 
@@ -14,12 +14,13 @@
       , "role": "lead"
     }
   ]
-  , "autoload": { "psr-4": { "bicycle\\<NULL>\\": "src/bicycle/<NULL>/" } }
-  , "autoload-dev": { "psr-4": { "bicycle\\<NULL>\\": "tests/bicycle/<NULL>/"} }
+  , "autoload": { "psr-4": { "bicycle\\dispatcher\\": "src/bicycle/dispatcher/" } }
+  , "autoload-dev": { "psr-4": { "bicycle\\dispatcher\\": "tests/bicycle/dispatcher/"} }
   , "require": 
   {
     "php": ">=5.3.9"
     , "php-bicycle/php-bicycle": ">=1.0.0"
+    , "php-bicycle/php-bicycle-delegate": ">=1.0.0"
   }
   , "require-dev": { "php-bicycle/php-bicycle-test-tools": ">=1.0.0" }
   , "repositories":
@@ -27,6 +28,11 @@
     {
       "type": "git"
       , "url":  "https://github.com/pqbd/php-bicycle.git"
+    }
+    ,
+    {
+      "type": "git"
+      , "url":  "https://github.com/pqbd/php-bicycle-delegate.git"
     }
     ,
     {
